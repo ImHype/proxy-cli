@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+const yargs = require('yargs');
+const proxy = require('..');
+const path = require("path");
+
+const argv = yargs
+    .usage('Usage: proxy [options]')
+    .alias('c', 'config')
+    .describe('c', '配置文件路径')
+    .default('c', 'proxy.config')
+    
+    .alias('s', 'secure')
+    .describe('s', '是否启用 https')
+    .default('s', false)
+
+    .alias('v', 'version')
+    .describe('v', 'Show version')
+    .version(() => `v${require('./package.json').version}`)
+
+    .help('H')
+    .alias('H', 'help')
+    .alias('H', 'h')
+    .example('proxy --config ./config.js --secure true').argv;
+
+
+const configFile = path.join(process.cwd(), argv.config);
+
+proxy({
+    configFile,
+    secure: argv.secure
+})
