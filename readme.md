@@ -1,6 +1,6 @@
-# proxycli
+# Proxycli
 
-## How to use ?
+## How to use?
 ### Step 1 - Install
 ```bash
 $ npm i -g proxycli
