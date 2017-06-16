@@ -9,7 +9,6 @@ $ npm i -g proxycli
 ### Step 2 - Configration
 ```json
 {
-    "timeout": 3000,
     "locations": [
         {
             "host": "m.kaola.com",
