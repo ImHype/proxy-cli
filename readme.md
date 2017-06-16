@@ -24,7 +24,7 @@ $ npm i -g proxycli
 
 ### Step 3 - Start
 ```bash
-$ proxy
+$ proxy # nohup proxy &
 ```
 
 ## Help
