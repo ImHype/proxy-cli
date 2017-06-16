@@ -29,7 +29,6 @@ $ proxy # nohup proxy &
 
 ## Help
 ```
-W
 $ proxy -h
 Usage: proxy [options]
 
@@ -41,8 +40,6 @@ Usage: proxy [options]
 
 示例：
   proxy --config ./config.js --secure true
-
-
 ```
 
 ## Lincese 
